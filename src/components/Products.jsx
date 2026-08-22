@@ -1,4 +1,5 @@
-import LeafIcon from './LeafIcon'
+import olmetieImg from '../assets/olmetie.jpg'
+import arugulaImg from '../assets/arugula.jpg'
 
 const PRODUCTS = [
   {
@@ -6,12 +7,14 @@ const PRODUCTS = [
     tagline: 'Butterhead-style salad lettuce',
     description:
       'Tender, mild-flavored lettuce grown in our hydroponic channels. Harvested with the roots trimmed fresh so it stays crisp for days.',
+    image: olmetieImg,
   },
   {
     name: 'Arugula',
     tagline: 'Peppery salad rocket',
     description:
       'Fast-growing, nutrient-dense greens with a signature peppery bite. Perfect for salads, sandwiches, and garnish.',
+    image: arugulaImg,
   },
 ]
 
@@ -30,13 +33,17 @@ function Products() {
 
         <div className="product-grid">
           {PRODUCTS.map((product) => (
-            <article className="product-card" key={product.name}>
-              <div className="product-icon">
-                <LeafIcon size={40} color="#7cb928" />
+            <article
+              className="product-card"
+              key={product.name}
+              style={{ backgroundImage: `url(${product.image})` }}
+            >
+              <div className="product-card-overlay" />
+              <div className="product-card-content">
+                <h3>{product.name}</h3>
+                <p className="product-tagline">{product.tagline}</p>
+                <p>{product.description}</p>
               </div>
-              <h3>{product.name}</h3>
-              <p className="product-tagline">{product.tagline}</p>
-              <p>{product.description}</p>
             </article>
           ))}
         </div>
