@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import LeafIcon from './LeafIcon'
-import { PHONE_DISPLAY, PHONE_TEL } from '../constants'
+import { FACEBOOK_URL } from '../constants'
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -34,8 +34,13 @@ function Header() {
           </ul>
         </nav>
 
-        <a href={`tel:${PHONE_TEL}`} className="header-phone">
-          {PHONE_DISPLAY}
+        <a
+          href={FACEBOOK_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="header-cta"
+        >
+          Visit us!
         </a>
 
         <button

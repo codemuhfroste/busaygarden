@@ -52,7 +52,7 @@
   color: var(--green-mid);
 }
 
-.header-phone {
+.header-cta {
   font-weight: 700;
   font-size: 15px;
   padding: 10px 20px;
@@ -63,7 +63,7 @@
   transition: background 0.2s ease;
 }
 
-.header-phone:hover {
+.header-cta:hover {
   background: var(--green-mid);
 }
 
@@ -111,7 +111,7 @@
     max-height: 300px;
   }
 
-  .header-phone {
+  .header-cta {
     display: none;
   }
 
