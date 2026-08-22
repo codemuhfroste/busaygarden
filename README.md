@@ -1,6 +1,6 @@
-# Busay Gardens
+# Busay Garden
 
-Website for Busay Gardens, a hydroponic lettuce and arugula supplier in Busay, Daraga, Albay.
+Website for Busay Garden, a hydroponic lettuce and arugula supplier in Busay, Daraga, Albay.
 
 Contact: Ninette U. Tejada &middot; 0939-917-9174
 

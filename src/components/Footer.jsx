@@ -10,7 +10,7 @@ function Footer() {
         <a href="#home" className="brand brand-light">
           <LeafIcon size={24} color="#7cb928" />
           <span>
-            Busay <em>Gardens</em>
+            Busay <em>Garden</em>
           </span>
         </a>
 
@@ -24,7 +24,7 @@ function Footer() {
         </p>
 
         <p className="footer-copy">
-          &copy; {year} Busay Gardens. All rights reserved.
+          &copy; {year} Busay Garden. All rights reserved.
         </p>
       </div>
     </footer>

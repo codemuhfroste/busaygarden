@@ -18,7 +18,7 @@ function Header() {
         <a href="#home" className="brand">
           <LeafIcon size={28} color="#7cb928" />
           <span>
-            Busay <em>Gardens</em>
+            Busay <em>Garden</em>
           </span>
         </a>
 

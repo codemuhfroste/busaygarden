@@ -26,7 +26,7 @@ function About() {
             A small hydroponic garden growing big, healthy leaves
           </h2>
           <p className="section-sub">
-            Busay Gardens is a family-run hydroponic farm in Busay, Daraga,
+            Busay Garden is a family-run hydroponic farm in Busay, Daraga,
             Albay, focused on doing two things well: lettuce and arugula. We
             keep our operation small so every channel gets attention and
             every harvest stays consistent.

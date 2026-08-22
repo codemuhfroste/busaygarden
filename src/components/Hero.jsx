@@ -17,7 +17,7 @@ function Hero() {
             harvested to order.
           </h1>
           <p className="hero-sub">
-            Busay Gardens grows clean, pesticide-light salad greens using
+            Busay Garden grows clean, pesticide-light salad greens using
             hydroponic NFT channels right here in Busay, Daraga, Albay.
             Freshly cut and ready for your table, market stall, or restaurant.
           </p>
