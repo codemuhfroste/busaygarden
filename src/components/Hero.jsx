@@ -6,22 +6,22 @@ function Hero() {
     <section id="home" className="hero">
       <div className="container hero-inner">
         <div className="hero-copy">
-          <span className="section-eyebrow hero-eyebrow">
+          <span className="section-eyebrow hero-eyebrow hero-anim hero-anim-1">
             Grown fresh &middot; {LOCATION}
           </span>
-          <h1>
+          <h1 className="hero-anim hero-anim-2">
             Crisp hydroponic
             <br />
             lettuce &amp; arugula,
             <br />
             harvested to order.
           </h1>
-          <p className="hero-sub">
+          <p className="hero-sub hero-anim hero-anim-3">
             Busay Garden grows clean, pesticide-free salad greens using
             hydroponic NFT channels right here in Busay, Daraga, Albay.
             Freshly cut and ready for your table, market stall, or restaurant.
           </p>
-          <div className="hero-actions">
+          <div className="hero-actions hero-anim hero-anim-4">
             <a href={`tel:${PHONE_TEL}`} className="btn btn-primary">
               Call to Order
             </a>
@@ -31,7 +31,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hero-art" aria-hidden="true">
+        <div className="hero-art hero-anim hero-anim-2" aria-hidden="true">
           <div className="hero-blob" />
           <LeafIcon size={220} color="#7cb928" className="hero-leaf" />
           <LeafIcon size={110} color="#1c3b12" className="hero-leaf-small" />

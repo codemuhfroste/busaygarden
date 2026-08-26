@@ -1,10 +1,11 @@
 import { CONTACT_NAME, LOCATION, PHONE_DISPLAY, PHONE_TEL } from '../constants'
+import Reveal from './Reveal'
 
 function Contact() {
   return (
     <section id="contact" className="section contact">
       <div className="container contact-inner">
-        <div className="contact-card">
+        <Reveal className="contact-card">
           <span className="section-eyebrow">Get In Touch</span>
           <h2 className="section-heading">Order fresh greens this week</h2>
           <p className="section-sub">
@@ -32,9 +33,9 @@ function Contact() {
           <a href={`tel:${PHONE_TEL}`} className="btn btn-primary">
             Call {PHONE_DISPLAY}
           </a>
-        </div>
+        </Reveal>
 
-        <div className="contact-map">
+        <Reveal className="contact-map" delay={150}>
           <iframe
             title="Map of Daraga, Albay"
             src="https://www.openstreetmap.org/export/embed.html?bbox=123.6474%2C13.1049%2C123.7274%2C13.1849&layer=mapnik&marker=13.1449%2C123.6874"
@@ -49,7 +50,7 @@ function Contact() {
           >
             Open in Google Maps &rarr;
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   )

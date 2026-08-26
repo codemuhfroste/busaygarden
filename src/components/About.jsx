@@ -1,3 +1,5 @@
+import Reveal from './Reveal'
+
 const POINTS = [
   {
     title: 'Hydroponic NFT system',
@@ -20,7 +22,7 @@ function About() {
   return (
     <section id="about" className="section about">
       <div className="container about-inner">
-        <div className="about-copy">
+        <Reveal className="about-copy">
           <span className="section-eyebrow">Our Farm</span>
           <h2 className="section-heading">
             A small hydroponic garden growing big, healthy leaves
@@ -31,14 +33,19 @@ function About() {
             keep our operation small so every channel gets attention and
             every harvest stays consistent.
           </p>
-        </div>
+        </Reveal>
 
         <ul className="about-points">
-          {POINTS.map((point) => (
-            <li key={point.title} className="about-point">
+          {POINTS.map((point, index) => (
+            <Reveal
+              as="li"
+              key={point.title}
+              className="about-point"
+              delay={index * 100}
+            >
               <h3>{point.title}</h3>
               <p>{point.detail}</p>
-            </li>
+            </Reveal>
           ))}
         </ul>
       </div>
